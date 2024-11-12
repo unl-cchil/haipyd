@@ -1,7 +1,8 @@
 ## Effects of human-animal interaction on positive youth development: A replication study
 
 -   Created on 2024-11-07 by Jeffrey R. Stevens
-    (<jeffrey.r.stevens@gmail.com>) <!-- -   Finalized on 2024-10-02 -->
+    (<jeffrey.r.stevens@gmail.com>)
+-   Finalized on 2024-11-12
 
 This repository provides the reproducible research materials for our
 project that investigates how human-animal interaction, animal
@@ -19,7 +20,8 @@ If you use any of these materials, please cite:
 > Pachunka, A., Jeffries, J., Karr, L., Luck, L., Reiling, B.A.,
 > Schultz, D.H., & Stevens, J.R. (2024). Effects of human-animal
 > interaction on positive youth development: A replication study.
-> [doi:10.31234/osf.io/8tkhp](https://doi.org/10.31234/osf.io/?????)
+> *PsyArXiv*.
+> [doi:10.31234/osf.io/ge7bf](https://doi.org/10.31234/osf.io/ge7bf)
 
 ## Summary
 
@@ -321,7 +323,7 @@ description
 </td>
 <td>
 <code itemprop="description">The dataset from the paper
-<a href="https://doi.org/10.31234/osf.io/?????">Effects of human-animal
+<a href="https://doi.org/10.31234/osf.io/ge7bf">Effects of human-animal
 interaction on positive youth development: A replication study</a>. This
 study conducted two survey-based studies replicating [Mueller
 (2014)](https://doi.org/10.1080/10888691.2014.864205). Undergraduate
@@ -339,7 +341,7 @@ well-being.</code>
 url
 </td>
 <td>
-<code itemprop="url"><https://github.com/unl-cchil/haipyd></code>
+<code itemprop="url">https://github.com/unl-cchil/haipyd</code>
 </td>
 </tr>
 <tr>
@@ -347,7 +349,7 @@ url
 sameAs
 </td>
 <td>
-<code itemprop="sameAs"><https://github.com/unl-cchil/haipyd></code>
+<code itemprop="sameAs">https://github.com/unl-cchil/haipyd</code>
 </td>
 </tr>
 <tr>
@@ -355,7 +357,7 @@ sameAs
 citation
 </td>
 <td>
-<code itemprop="citation"><https://doi.org/10.31234/osf.io/>?????</code>
+<code itemprop="citation">https://doi.org/10.31234/osf.io/ge7bf</code>
 </td>
 </tr>
 <tr>
@@ -386,7 +388,7 @@ name
 url
 </td>
 <td>
-<code itemprop="url"><https://creativecommons.org/licenses/by-sa/4.0/></code>
+<code itemprop="url">https://creativecommons.org/licenses/by-sa/4.0/</code>
 </td>
 </tr>
 </table>
