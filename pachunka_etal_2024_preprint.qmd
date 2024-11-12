@@ -1,0 +1,547 @@
+---
+title: "Effects of human-animal interaction on positive youth development: A replication study"
+# If blank, the running header is the title in upper case.
+shorttitle: "Effects of HAI on positive youth development"
+# Set names and affiliations.
+# It is nice to specify everyone's orcid, if possible.
+# There can be only one corresponding author, but declaring one is optional.
+author:
+  - name: Allison Pachunka
+    orcid: 0009-0000-3510-8618
+    # Roles are optional. 
+    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
+    # conceptualization, data curation, formal Analysis, funding acquisition, investigation, 
+    # methodology, project administration, resources, software, supervision, validation, 
+    # visualization, writing, editing
+    roles:
+      - conceptualization
+      - formal analysis
+      - investigation
+      - methodology
+      - writing
+      - editing
+    affiliations:
+      - id: id1
+        name: "University of Nebraska-Lincoln"
+        department: Department of Animal Science
+  - name: Jay Jeffries
+    orcid: 0000-0003-1105-1463
+    roles:
+      - data curation
+      - formal analysis
+      - methodology
+      - software
+      - validation
+      - visualization
+      - writing
+      - editing
+    affiliations: 
+      - id: id2
+        name: "University of Nebraska-Lincoln"
+        department: Department of Educational Psychology
+  - name: Lisa Karr
+    orcid: 0009-0004-1798-2554
+    roles:
+      - conceptualization
+      - methodology
+      - supervision
+      - writing
+      - editing
+    affiliations:
+      - ref: id1
+  - name: Lena Luck
+    orcid: 0009-0005-8264-6386
+    roles:
+      - methodology
+      - writing
+      - editing
+    # List city and region/state for unaffiliated authors
+    affiliations:
+      - ref: id1
+  - name: Bryan A. Reiling
+    orcid: 0000-0002-5913-0614
+    roles:
+      - methodology
+      - writing
+      - editing
+    # List city and region/state for unaffiliated authors
+    affiliations:
+      - ref: id1
+  - name: Douglas H. Schultz
+    orcid: 0000-0003-0809-9036
+    roles:
+      - methodology
+      - writing
+      - editing
+    # List city and region/state for unaffiliated authors
+    affiliations:
+      - id: id3
+        name: "University of Nebraska-Lincoln"
+        department: Department of Psychology
+      - id: id4
+        name: "University of Nebraska-Lincoln"
+        department: Center for Brain, Biology & Behavior
+  - name: Jeffrey R. Stevens
+    corresponding: true
+    orcid: 0000-0003-2375-1360
+    email: jeffrey.r.stevens@gmail.com
+    # Roles are optional. 
+    # Select from the CRediT: Contributor Roles Taxonomy https://credit.niso.org/
+    # conceptualization, data curation, formal Analysis, funding acquisition, investigation, 
+    # methodology, project administration, resources, software, supervision, validation, 
+    # visualization, writing, editing
+    roles:
+      - conceptualization
+      - data curation
+      - formal analysis
+      - funding acquisition
+      - investigation
+      - methodology
+      - project administration
+      - resources
+      - software
+      - supervision
+      - validation
+      - visualization
+      - writing
+      - editing
+    affiliations:
+      - ref: id3
+      - ref: id4
+author-note:
+  status-changes: 
+    # Example: [Author name] is now at [affiliation].
+    affiliation-change: "**This preprint has not been peer reviewed.** Version: `r Sys.Date()`."
+    # Example: [Author name] is deceased.
+    deceased: ~
+  # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
+  disclosures:
+    # Example: This study was registered at X (Identifier Y).
+    study-registration: ~
+    # Acknowledge and cite data/materials to be shared.
+    data-sharing: Data and reproducible research materials are available at <https://osf.io/8tkhp/>.
+    # Example: This article is based on data published in [Reference].
+    # Example: This article is based on the dissertation completed by [citation].  
+    related-report: ~
+    # Example: [Author name] has been a paid consultant for Corporation X, which funded this study.
+    conflict-of-interest: The authors report there are no competing interests to declare.
+    # Example: This study was supported by Grant [Grant Number] from [Funding Source].
+    financial-support: This work was supported by a University of Nebraska Collaboration Initiative Grant.
+    # Example: The authors are grateful to [Person] for [Reason].
+    gratitude: We are grateful to Megan Mueller and Rich Lerner's research group for provided their research materials and to other members of the University of Nebraska HAI Initiative for help on the project.
+    # Example. Because the authors are equal contributors, order of authorship was determined by a fair coin toss.
+    authorship-agreements: ~
+abstract: "Interacting with animals can improve health and well-being across the lifespan. Some programs such as 4-H and FFA center around youth interacting with animals, potentially enhancing youth development. Mueller (2014) investigated whether these interactions and attitudes about animals influenced measures of positive youth development. The aim of our studies was to replicate Mueller’s methods and extend her work by evaluating whether membership in animal-focused youth programs moderate any associations between interactions, attitudes, and positive youth development. We did not find strong relationships among human-animal interaction and positive youth development, which failed to replicate Mueller’s findings. However, we did find relationships between animal attitudes and positive youth development, replicating Mueller’s findings. Membership in animal-focused youth programs did not moderate any observed effects. Thus, though animal attitudes are associated with positive youth development, membership in a youth program does not seem to enhance these relationships, and human-animal interactions do not seem to have strong associations with positive youth development."
+# Put as many keywords at you like, separated by commmas (e.g., [reliability, validity, generalizability])
+keywords: [animal attitudes, attachment, commitment, human-animal interaction, positive youth development]
+# If true, tables and figures are mingled with the text instead of listed at the end of the document.
+floatsintext: true
+# Numbered lines (.pdf and .docx only)
+numbered-lines: false
+# File with references
+bibliography: ["bibliography.bib", "r-references.bib"]
+csl: pachunka_etal_2024.csl
+# Suppress title page
+suppress-title-page: false
+# Masks references that appear in the masked-citations list
+mask: false
+# masked-citations:
+#   - schneider2012cattell
+#   - schneider2015intelligence
+# Language options. See https://quarto.org/docs/authoring/language.html
+lang: en
+language:
+  citation-last-author-separator: "and"
+  citation-masked-author: "Masked Citation"
+  citation-masked-date: "n.d."
+  citation-masked-title: "Masked Title"
+  title-block-author-note: "Author Note"
+  title-block-correspondence-note: "Correspondence concerning this article should be addressed to"
+  title-block-role-introduction: "Author roles were classified using the Contributor Role Taxonomy (CRediT; https://credit.niso.org/) as follows:"
+format:
+  apaquarto-docx: default
+  # apaquarto-pdf:
+    # Can be jou (journal), man (manuscript), stu (student), or doc (document)
+    # documentmode: man
+keep-tex: true
+papersize: letter
+---
+
+```{r}
+#| label: setup
+#| include: false
+library(conflicted)
+library(cocoon)
+library(flextable)
+library(here)
+library(knitr)
+library(papaja)
+library(rmarkdown)
+library(tidyverse)
+
+r_refs("r-references.bib")
+my_citations <- cite_r(file = "r-references.bib", pkgs = c("BayesFactor", "cocoon", "flextable", "ggbeeswarm", "here", "gtsummary", "Hmisc", "labelled", "lavaan", "papaja", "patchwork", "psych", "semTable", "tidyverse"), withhold = FALSE)
+
+conflicts_prefer(dplyr::filter, .quiet = TRUE)
+conflicts_prefer(flextable::separate_header, .quiet = TRUE)
+
+
+load("pachunka_etal_2024.RData")
+# source("R/pachunka_etal_2024_rcode.R")
+
+
+print_model_fit <- function(x) {
+  paste0("_CFI_ = ", 
+         format_num(x[names(x) == "cfi"], digits = 2), ", _RMSEA_ = ", 
+         format_num(x[names(x) == "rmsea"], digits = 2), " (90% _CI_ [", 
+         format_num(x[names(x) == "rmsea.ci.lower"], digits = 2), ", ", 
+         format_num(x[names(x) == "rmsea.ci.upper"], digits = 2), "]), _SRMR_ = ", 
+         format_num(x[names(x) == "srmr"], digits = 2))
+}
+print_regression <- function(x, pred) {
+  x <- mutate(x, est.std = as.numeric(est.std))
+  stat <- filter(x, predictor == pred)
+  paste0("_β_ = ", format_num(stat$est.std, digits = 3), ", _SE_ = ", format_num(stat$se, digits = 3), ", _z_ = ", format_num(stat$z, digits = 3), ", ", format_p(stat$pvalue))
+}
+
+```
+
+# Introduction
+
+The interaction between humans and animals can serve many functions including companionship, labor, and food. Recently, the role of animals in the lives of humans has shifted; for example, companion animals are commonly perceived as family members rather than pets or working animals [@Blazina.etal.2011]. As the human-animal relationship evolves, understanding the various facets that contribute to these interactions can help us maximize the potential benefits of these relationships. The roles of animals in the development of children have been evaluated in terms of family dynamics, classroom settings, and animal-assisted activities. Animal interaction increases a child's empathy [@Daly.Morton.2006], decreases loneliness [@Piper.Uttley.2019], supplies social support or a social buffer [@Beetz.etal.2011; @OHaire.2010], and grants children with an outlet to perform nurturing behaviors [@Melson.2003]. Current literature, however, provides inconsistent conclusions about how human-animal interactions (HAI) lead to perceived benefits. These inconsistencies have led to an increased emphasis on the context in which individuals interact with animals [@Overton.2010].
+
+Due to the complexity of human-animal interaction, understanding the impacts of animals on youth becomes crucial, especially for programs such as 4-H and FFA that often use animals to facilitate youth development. The framework of _positive youth development_ was created to highlight person-context relations found in developmental systems theories [@Damon.2004; @Lerner.etal.2005; @Jelicic.etal.2007; @Lerner.etal.2003]. More specifically, relational developmental systems theory views an individual as a comprehensive system which consists of  interacting systems that inevitably affect the environment as the environment mutually affects the system [@Overton.2010]. Thus, positive youth development is composed of the Five Cs (competence, connection, confidence, character, and caring), plus the "sixth C" of contribution (we refer to the combination of these as the Six Cs). Each of these constructs captures important components of positive youth development.
+
+Limited research has connected human-animal interaction and positive youth development through the lens of relational developmental systems theory. However, @Mueller.2014 did specifically examine if human-animal interaction and animal attitudes had any relationship with positive youth development, and if so, what impacts did animal-related youth development programs have on individuals. 
+Mueller investigated these questions by surveying participants in one wave of the "4-H Study of Positive Youth Development". She included measures of human-animal interactions, animal attitudes, positive youth development, and well-being  to investigate the relationship between interactions with animals and any positive developmental outcomes. 
+
+@Mueller.2014 found that individuals who were involved in animal-related activities or owned an animal were more active in their community (e.g., service activities, leadership roles, frequency of helping others). In addition, she found relationships among positive youth development and various measures of animal attachment, commitment, and perception of animal use. Research that includes human-animal interaction while applying relational developmental systems theory to evaluate positive youth development can serve as a model moving forward to gain empirical evidence in these various disciplines.
+
+Our current research attempts to replicate and extend Mueller's [-@Mueller.2014] study to examine whether human-animal interaction influences positive youth development in individuals that have interacted with animals during a youth development program such as 4-H or FFA. In two studies, we replicated Mueller's methods by measuring aspects of human-animal interaction, animal attitudes, and positive youth development in an undergraduate sample. We then extended the work by categorizing whether the participants were members of 4-H or FFA youth programs to determine if organizational membership influences potential effects of human-animal interaction on positive youth development.
+
+# Methods
+
+We conducted two studies with separate online, cross-sectional surveys to identify potential factors related to outcomes of positive youth development. Though the first study was based on Mueller's methods, we did not have access to all measures used in the original study. Therefore, we could not directly replicate that study. For Study 2, we had access to the original study materials, so we used measures more similar to Mueller's original study.
+
+## Study 1
+### Participants
+We recruited `r num_participants1` undergraduate students enrolled at the University of Nebraska-Lincoln (UNL) in the College of Agricultural Sciences and Natural Resources (CASNR) and the Department of Psychology as study participants (@tbl-demo). To mirror Mueller's sample, we restricted participation to those between 17-24 years of age. Of the participants, `r format_num(gender1$percent[gender1$gender == "Woman/Female"])`% identified as woman/female, `r format_num(gender1$percent[gender1$gender == "Man/Male"])`% identified as man/male, `r format_num(gender1$percent[gender1$gender == "Neither/Both"])`% identified as neither/both, and `r format_num(gender1$percent[gender1$gender == "I would prefer not to answer"])`% preferred not to respond. The participants self-reported as `r format_num(latinx1)`% Latina/o/x or Hispanic, `r format_num(black1)`% African American/Black, `r format_num(native1)`% Native American/American Indian/Indigenous, `r format_num(middleeastern1)`% Middle Eastern/Arab/Turkish/Iranian, `r format_num(asian1)`% Asian/Asian American/Pacific Islander, `r format_num(white1)`% White/European American, `r format_num(multiracial1)`% Biracial/multiracial, and `r format_num(racenoanswer1)`% preferred not to respond. Participants indicated that `r format_num(rural_urban1$percent[rural_urban1$rural_urban == "Rural"])`% of the sample grew up in rural areas, `r format_num(rural_urban1$percent[rural_urban1$rural_urban == "Suburban"])`% in suburban areas, `r format_num(rural_urban1$percent[rural_urban1$rural_urban == "Urban-Small to Medium City"])`% in small to medium sized cities, and `r format_num(rural_urban1$percent[rural_urban1$rural_urban == "Urban-Big City"])`% in large cities. Lastly, `r format_num(sum(ffa4h1$percent[ffa4h1$ffa4h_membership != "Neither"]))`% of the sample reported 4-H and/or FFA experience and `r format_num(sum(ownership1$percent[ownership1$ownership == "Yes"]))`% currently had an animal at home.
+
+### Procedure
+We recruited participants differently in the CASNR and Psychology samples from March to May 2022. The CASNR students received the digital survey through email listservs and received a \$10 Visa gift card through Virtual Incentives as compensation for completing the survey. We collected data from `r sum(source1$n[source1$source == "CASNR"])` CASNR students after aiming for 200 participants. Psychology students were recruited through the Psychology Department SONA study pool. SONA students could voluntarily select this study (among others) to receive course credit. We collected data from `r sum(source1$n[source1$source == "SONA"])` Psychology students after running the study through the end of the semester.
+
+### Measures
+The survey, administered through Qualtrics, consisted of sections regarding animal experience and interactions, attitudes towards animals, 4-H and FFA experience, positive youth development outcomes, well-being measures, and demographics. 
+
+[Animal experience and interactions.]{.H4} Participants first reported their experience with animals by ranking how much experience they had with a list of species (i.e., dog, cat, fish, bird, rabbit, ferret, small rodent, reptile, horse, cow, pig, goat, sheep, llama, and poultry). After assessing their experience with each animal on a five-point Likert scale, from _None at all_ (1) to _A great deal_ (5), participants selected one animal from the list to use as their focus for the remaining questions. The animal chosen was to be the animal that they had the greatest experience with or that they viewed as the most important. They categorized whether they considered the animal to be a companion animal (1) or livestock (2). Participants then reported how much time they spent in various interactions with their animal (responses could be _None at all_ (0), _Once per month_ (1), _Twice per month_ (2), _Once per week_ (3), _Two to three times per week_ (4), or _Daily_ (5)). If the item did not relate to their animal, they were advised to select _None at all_. To match Mueller's [-@Mueller.2014] measure of the _amount of care_ given to the animal, we calculated the mean score for feeding, cleaning, grooming, and training and rescaled it to a 0-4 scale.
+
+For the other activities, we converted the responses to numbers of days per month (0, 1, 2, 4, 12, or 30) for analysis. We then summed the scores across petting/playing, engaging in therapy sessions, riding/handling, and shows/competitions to generate the _frequency of activities_. This score was akin to Mueller's [-@Mueller.2014] intensity of activities measure, though our activities and frequency scale were slightly different. To match Mueller's models, we dichotomized the frequency measure into _presence of activities_, where 0 represented a frequency of 0 and 1 indicated a frequency greater than 0 (that is, they had some type of animal-related activities).
+
+Participants reported their _animal ownership_ by stating whether they have a pet/companion or livestock animal at their current residence (_Pet/companion animal_ (1), _Livestock_ (2), _Pet/companion animal and livestock_ (3), or _Neither_ (4)) and if they have ever been prescribed with an emotional support animal (_Yes_/_No_).
+
+[Animal attitudes.]{.H4} We assessed attitudes toward animals (what @Mueller.2014 refers to as cognition and emotions regarding animals) by measuring animal attachment, commitment, and perceptions of animal use (what Mueller refers to as moral orientation). Two scales measured emotional attachment to one's animals, including the 11-item Comfort from Companion Animals Scale [CCAS, @Zasloff.1996] and an adapted 11-item version of the Lexington Attachment to Pets Scale [LAPS, @Johnson.etal.1992]. Items within both scales were adjusted to better fit general animal ownership rather than specifically pet ownership (typically by replacing "pet" with "animal"). Participants were asked, while thinking of the specific animal they selected, "How much do you agree or disagree with the following?" with response options listed on a Likert scale ranging from _Strongly Disagree_ (1) to _Strongly Agree_ (5). Examples of items were "My animal makes me feel loved" or "I would do almost anything to take care of my animal". The CCAS responses had a Cronbach's $\alpha$ of `r format_num(reliability1$ccas$alpha$total$raw_alpha, 2)` and the LAPS responses had a Cronbach's $\alpha$ of `r format_num(reliability1$laps$alpha$total$raw_alpha, 2)`. These two scales were combined to represent the measure of _attachment_.
+
+The Miller-Rada Commitment to Pets Scale [MRCPS, @Staats.etal.1996] determined one's emotional and financial commitment to animals. This scale presented four scenarios, such as an animal destroying personal belongings, and asked participants if they would surrender the animal. Participants were prompted with the questions, "How much do you agree or disagree with the following?" and given a five-point Likert scale ranging from _Strongly Disagree_ (1) to _Strongly Agree_ (5) for each item on these scales. The MRCPS responses had a Cronbach's $\alpha$ of `r format_num(reliability1$mrcps$alpha$total$raw_alpha, 2)` for the measure of _commitment_.
+
+The Animal Attitude Scale [AAS, @Herzog.etal.2015] evaluated one's perception of uses of animals. This 10-item scale included different uses of animals such as animal consumption or medical research. Participants were prompted with the questions, "How much do you agree or disagree with the following?" and given a five-point Likert scale ranging from _Strongly Disagree_ (1) to _Strongly Agree_ (5) for each item on these scales.  The AAS responses had a Cronbach's $\alpha$ of `r format_num(reliability1$aas$alpha$total$raw_alpha, 2)` for the measure of _perception of animal use_ (what @Mueller.2014 refers to as moral orientation).
+
+[Youth program experience.]{.H4} Participants reported whether they have participated in 4-H or FFA (_4-H_, _FFA_, _4-H and FFA_, or _Neither_). If they had participated, they reported how many years they were active in the organization, whether they participated in animal-based projects (_Yes_/_No_), and whether they had shown animals in competitions (_Yes_/_No_). If  _Yes_, they reported the frequency and level at which they showed/competed (local, state, or national).  If they reported participating in animal-based projects, they reported whether this taught them various things such as responsibility, compassion, and respect on a Likert scale from _None at all_ (1) to _A great deal_ (5). 
+
+[Positive youth development.]{.H4} Participants completed the Positive Youth Development Short Form [@Lerner.etal.2005; @Phelps.etal.2009; @Bowers.etal.2010; @Geldhof.etal.2014], which measured five outcomes of positive youth development (the Five Cs): competence, connection, confidence, character, and caring. We asked participants "How much are the following statements like you", with 34 questions presented on a five-point Likert scale ranging from _Not at all like me_ (1) to _Just like me_ (5). Each question corresponded to one of the Five Cs. Along with this, a 12-item Contribution scale [@Mueller.2014] gauged participation in activities such as volunteering or other community involvement. The questions for all Six Cs (competence, connection, confidence, character, caring, contribution) were created with the inspiration of existing instruments used with adolescents, including the Profiles of Student Life-Attitudes and Behaviors [PSL-AB, @Benson.etal.1998], the Self-Perception Profile for Adolescents [@Harter.1988], the Teen Assessment Project [TAP, @Small.Rodgers.1995], the Empathic Concern Subscale of the Interpersonal Reactivity Index [@Davis.1980], and the Eisenberg Sympathy Scale [@Eisenberg.etal.1996].  Cronbach's $\alpha$ for each of the Six Cs were _caring_ $\alpha$ = `r format_num(reliability1$caring$alpha$total$raw_alpha, 2)`, _character_ $\alpha$ = `r format_num(reliability1$character$alpha$total$raw_alpha, 2)`, _competence_ $\alpha$ = `r format_num(reliability1$competence$alpha$total$raw_alpha, 2)`, _confidence_ $\alpha$ = `r format_num(reliability1$confidence$alpha$total$raw_alpha, 2)`, _connection_ $\alpha$ = `r format_num(reliability1$connection$alpha$total$raw_alpha, 2)`, and _contribution_ $\alpha$ = `r format_num(reliability1$contribution$alpha$total$raw_alpha, 2)`.
+
+[Depression, anxiety, and demographics.]{.H4} Participants completed the 20-item Center for Epidemiological Studies Depression scale [CESD, @Radloff.1977], where they reported how often they felt a particular way in the past week from _Rarely or none of the time_ (less than 1 day) (1) to _Most or all of the time_ (5-7 days) (4). The CESD responses had a Cronbach's $\alpha$ of `r format_num(reliability1$cesd$alpha$total$raw_alpha, 2)` for the measure of _depression_.
+
+They also completed the 20-item State-Train Anxiety Inventory – Trait scale [STAIT, @Spielberger.1983], where they rated how often they felt certain things about themselves with a 4-point scale from _Rarely or none of the time_ (0) to _Most or all of the time_ (3). The STAIT responses had a Cronbach's $\alpha$ of `r format_num(reliability1$stait$alpha$total$raw_alpha, 2)`
+
+Lastly, participants reported demographics including gender, race/ethnicity, and community growing up (_Rural_, _Suburban_, or _Urban_), relationship status, and total parental income.
+
+## Study 2
+### Participants
+We recruited `r num_participants2` undergraduate students enrolled at the University of Nebraska-Lincoln (UNL) in the College of Agricultural Sciences and Natural Resources (CASNR) and the Department of Psychology as the study participants (@tbl-demo). Participants reported that `r format_num(gender2$percent[gender2$gender == "Woman/Female"])`% of the sample identified as woman/female, `r format_num(gender2$percent[gender2$gender == "Man/Male"])`% identified as man/male, and `r format_num(gender2$percent[gender2$gender == "Neither/Both"])`% identified as neither/both. The participants self-reported as `r format_num(latinx2)`% Latina/o/x or Hispanic, `r format_num(black2)`% African American/Black, `r format_num(native2)`% Native American/American Indian/Indigenous, `r format_num(middleeastern2)`% Middle Eastern/Arab/Turkish/Iranian, `r format_num(asian2)`% Asian/Asian American/Pacific Islander, `r format_num(white2)`% White/European American, `r format_num(multiracial2)`% Biracial/multiracial, and `r format_num(racenoanswer2)`% preferred not to respond. In addition, `r format_num(rural_urban2$percent[rural_urban2$rural_urban == "Rural"])`% of the sample grew up in rural areas, `r format_num(rural_urban2$percent[rural_urban2$rural_urban == "Suburban"])`% in suburban areas, `r format_num(rural_urban2$percent[rural_urban2$rural_urban == "Urban-Small to Medium City"])`% in small to medium sized cities, and `r format_num(rural_urban2$percent[rural_urban2$rural_urban == "Urban-Big City"])`% in large cities. Lastly, `r format_num(sum(ffa4h2$percent[ffa4h2$ffa4h_membership != "Neither"]))`% of the sample reported 4-H and/or FFA experience and `r format_num(sum(ownership2$percent[ownership2$ownership == "Yes"]))`% currently had an animal at home.
+
+
+### Procedure
+We collected data from participants in three batches, totaling `r num_participants2` participants. The first batch (N = `r sum(source2$n[source2$source == "CASNR"])`) recruited CASNR freshmen students (to avoid resampling participants from Study 1) in June 2023 through email listservs. Participants received a \$10 Visa gift card through Virtual Incentives upon completing the survey. Because of the low sample size, statistical model fit was inadequate, necessitating additional data collection. The second batch (N = `r sum(source2$n[source2$source == "CASNR2"])`) recruited CASNR students in two Animal Science courses (primarily freshmen) for course credit in January and February 2024. Duplicate participants from the first batch and Study 1 were removed. The third batch (N = `r sum(source2$n[source2$source == "SONA"])`) recruited participants from the Department of Psychology SONA study pool from January to March 2024. Participants received course credit and could not enroll in this study if they completed Study 1.
+
+
+### Measures
+This survey also used Qualtrics and was similar to Study 1 but followed the measures of @Mueller.2014 more closely, as we requested and received access to the research materials. 
+
+[Animal experience and interactions.]{.H4} This survey recorded _animal ownership_ of any animals (_Yes_/_No_), and if _Yes_, what kind of animal. They chose any that applied from the list of a dog, cat, horse, a group of small animals (fish, bird, rabbit, or small rodent), livestock (cow, pig, goat, or other large animal), or other (they were asked to specify). To gain an understanding of the _amount of care_ provided to the owned animal(s), they reported how often they are responsible for its care from _Almost always_ (4) to _Almost never_ (0). Unlike in Study 1, they were not asked to focus on a single animal for the subsequent questions.
+
+All participants reported how often they participate in activities such as horseback riding, dog showing or livestock competitions, animal-related club or extracurricular activity, and volunteering in an animal shelter or animal therapy program. Responses could be _Never or Rarely_ (0), _Once a month_ (1), _Twice a month_ (2, _Once a week_ (3), _Twice a week_ (4), or _Almost every day_ (5). These activities and frequencies matched Mueller's (2014) methods, so we summed the number of days per month across all items to generate the _frequency of activities_ and dichotomized the scores into 0 and 1 or more activities for _presence of activities_.
+
+[Animal attitudes.]{.H4} Participants responded to six modified questions from the CCAS and LAPS scales to measure emotional attachment towards their animal(s) [@Johnson.etal.1992; @Zasloff.1996], four modified questions from the MRCPS to evaluate commitment to ownership [@Staats.etal.1996], and six modified questions from the AAS to evaluate perception of animal use [@Herzog.etal.2015]. Participants reported "How much do you agree or disagree with the following?" on a 5-point scale from _Strongly Agree_ (5) to _Strongly Disagree_ (1), or a sixth option for the attachment questions was _Does Not Apply_ (0). Cronbach's $\alpha$ for these measures were _attachment_ $\alpha$ = `r format_num(reliability2$attachment$alpha$total$raw_alpha, 2)`, _commitment_ $\alpha$ = `r format_num(reliability2$mrcps$alpha$total$raw_alpha, 2)`, _perception of animal use_ $\alpha$ = `r format_num(reliability2$animaluse$alpha$total$raw_alpha, 2)`.
+
+
+[Youth program experience.]{.H4} Participants indicated whether they participated in 4-H, FFA, both, or neither and if so, they answered whether they participated in animal-based projects. 
+
+[Positive youth development.]{.H4} We again used the Positive Youth Development Short Form, but this time we used a slightly different version from Study 1 that focused on older adolescents and was  used in @Mueller.2014. This included a 34-item scale to measure the Five Cs (competence, connection, confidence, character, and caring). For the first section of this scale, when asked "How much do you agree or disagree with the following?", participants could answer on a 5-point Likert scale from _Strongly Agree_ (5) to _Strongly Disagree_ (1). The second portion asked, "How important is each of the following to you in your life?" in which they could report _Not important_ (1), _Somewhat important_ (2), _Not sure_ (3), _Quite important_ (4), or _Extremely important_ (4). Next, the form asked "Think about the people who know you well. How do you think they would rate you on each of these?" reported on a five-point Likert scale from _Not at all like me_ (1) to _Very much like me_ (5). The next section of this positive youth development form asked, "How well do each of these statements describe you?" reported on a five-point Likert scale from _Not well_ (1) to _Very well_ (5).  Lastly, there were two sections with the first asking, "How much do you agree or disagree with the following?" regarding adults in their life and, "How true is each of these statements for you?" with both sections using a five-point Likert scale from _Strongly Agree_ (5) to _Strongly Disagree_ (1). The next scale included was the same Contribution scale from Study 1 that measured contribution to their community such as student government, helping a friend, or volunteering [@Mueller.2014]. Cronbach's $\alpha$ for each of the Six Cs were _caring_ $\alpha$ = `r format_num(reliability2$caring$alpha$total$raw_alpha, 2)`, _character_ $\alpha$ = `r format_num(reliability2$character$alpha$total$raw_alpha, 2)`, _competence_ $\alpha$ = `r format_num(reliability2$competence$alpha$total$raw_alpha, 2)`, _confidence_ $\alpha$ = `r format_num(reliability2$confidence$alpha$total$raw_alpha, 2)`, _connection_ $\alpha$ = `r format_num(reliability2$connection$alpha$total$raw_alpha, 2)`, and _contribution_ $\alpha$ = `r format_num(reliability2$contribution$alpha$total$raw_alpha, 2)`.
+
+[Self-regulation, depression, and demographics.]{.H4} For Study 2, we added the Selection, Optimization, and Compensation questionnaire [@Baltes.etal.1999] to measure Intentional Self-Regulation (ISR). The participants chose whether they were more similar to Person A or Person B for each item's posed scenario. For example, Person A's item may include "Even in difficult situations, I don't burden others" while Person B's item would include "When things aren't going so well, I accept help from others" [@Baltes.etal.1999]. The ISR responses had a Cronbach's $\alpha$ of `r format_num(reliability2$isr$alpha$total$raw_alpha, 2)` for the measure of _self-regulation_.
+
+Participants then completed a 15-item Center for Epidemiological Studies Depression scale [CDES, @Radloff.1977]. The CESD responses had a Cronbach's $\alpha$ of `r format_num(reliability2$cesd$alpha$total$raw_alpha, 2)` for the measure of _depression_.
+
+The survey ended with the same demographics from Study 1 plus a question about their college rank (_Freshmen_, _Sophomore_, _Junior_, _Senior_) and college major (for batches 2 and 3).
+
+## Ethics
+All procedures were conducted in an ethical and responsible manner, in full compliance with all relevant codes of experimentation and legislation and were approved by the Institutional Review Board (IRB) (protocol #21725). All participants offered consent to participate, and they acknowledged that de-identified data could be published publicly. 
+
+## Data analysis
+
+We used `r my_citations` for our analyses. The manuscript was created using _knitr_  [Version `r packageVersion("knitr")`, @R-knitr], _papaja_ [Version `r packageVersion("papaja")`, @R-papaja], _quarto_  [Version `r packageVersion("quarto")`, @R-quarto], and the _apaquarto_ Quarto extension [@R-apaquarto].  Data, analysis scripts, supplementary materials, and reproducible research materials are available at the Open Science Framework (<https://osf.io/8tkhp/>).
+
+We conducted structural equation model (SEM) methods using the _lavaan_ package [Version `r packageVersion("lavaan")`, @R-lavaan]. We evaluated comparisons of model fit between nested models using a likelihood ratio test of differences in model deviances. We implemented robust maximum likelihood estimation to handle estimations of non-normally distributed continuous variables [@Yuan.Bentler.2000] and full information maximum likelihood to ensure estimations used all available data. In all models, the defined threshold for statistical significance was set at $\alpha$ = .05. Using established criteria from previous literature [@Bentler.1990; @MacCallum.etal.1996; @Hu.Bentler.1999], model fit indices included the comparative fit index (CFI; CFI > .90 indicates adequate fit), root mean square error of approximation (RMSEA; RMSEA < .08 indicates adequate fit), and standard root mean residual (SRMR; SRMR < .08 indicates good fit). The χ^2^ test of exact model fit is reported but not evaluated given its strong bias against large sample sizes [@Bentler.Bonett.1980].
+
+Using the item parcels provided by @Mueller.2014, we generated measurement models for the Six Cs of positive youth development, depression, intentional self-regulation, attachment, commitment, and perception of animal use. We specified latent variables with the fixed variance method, permitting estimation of all factor loadings. Local model fit for the measurement models of depression, contribution, competence, confidence, care, and attachment variables were unavailable because they were each measured by three parcels of indicators and formed fully saturated models. 
+
+Guided by @Mueller.2014, the first SEM examined how participation in human-animal interaction relates to positive youth developmental outcomes. To do so, the Six Cs of positive youth development, depression, and intentional self-regulation latent outcomes were regressed on animal ownership, amount of animal care, and presence and intensity of animal activities. In a separate model, the Six Cs of positive youth development, depression, and intentional self-regulation latent outcomes were regressed on animal ownership. Both models can be thought of as a multiple regression with multiple latent outcomes. 
+To ascertain the relationships between animal attitudes and positive and negative youth development, a second SEM introduced attachment, commitment, and perception of animal use as predictors of the Six Cs of positive youth development, depression, and intentional self-regulation latent outcomes. Following the process of @Mueller.2014, SEM paths that exhibited non-significant regression coefficients were removed from the model in a stepwise manner. To do so, the path coefficient with the largest _p_-value was dropped, the model was re-estimated, and the fit of the newly trimmed model was compared to the previous model. This model-trimming process continued until model fit significantly deviated from the original model fit, as denoted by a significant likelihood ratio test. @tbl-trimmed1 and @tbl-trimmed2 display the path trimmed and model fit at each step of model trimming for Studies 1 and 2, respectively.
+
+Because intentional self-regulation data were not collected in Study 1, the latent variable for intentional self-regulation was not used in any Study 1 models. Otherwise, data analysis for both studies was similar, excluding differences in measures described in Study 2.
+
+In all models from Study 1 and 2 discussed, the moderating effects of participation in either 4-H or FFA was tested to examine differential relationships between those who identified as members and non-members of either group. Thus, we created a measure of group membership by assigning participants who were members in either or both groups a value of 1 and participants who were not members of either group a value of 0. Using a multigroup confirmatory factor analysis approach [MGCFA, @Joreskog.1971], identical models were tested over both groups. Pairs of equality constraints were placed on all regression paths from either group's model. This allowed us to examine whether modeled relationships significantly differed between 4-H or FFA members and non-member models. Using model-derived modification indices, pairs of equality constraints were sequentially lifted from the models and a likelihood ratio test tested differences in model fit between the model with all pairs of equality constraints and the model with the freed pair of equality constraints. If modification indices proposed that more than one relationship differed among the two group's models, then an individual pair of equality constraint was lifted, one at a time, in successive models and differences in model fit was assessed from the prior model. This was iterated through until all equality constraints on regression paths were investigated. This means that more than one relationship in a model could be moderated by 4-H or FFA participation. After freeing a pair of equality constraints from a model, a significant difference in model fit (as denoted by a significant likelihood ratio test) indicates moderation effects. Moderation suggests that the strength or sign of the relationship depends on group membership. 
+
+# Results
+
+## Model Fit
+
+The standardized factor loadings for measured item parcels ranged from 
+λ~`r sub(" ", "", str_to_title(loadings_pyd1[which(loadings_pyd1$std == min(loadings_pyd1$std)), ]$subscale))`~ = `r format_num(min(loadings_pyd1$std), digits = 2)` to 
+λ~`r sub(" ", "", str_to_title(loadings_pyd1[which(loadings_pyd1$std == max(loadings_pyd1$std)), ]$subscale))`~ = `r format_num(max(loadings_pyd1$std), digits = 2)` and 
+λ~`r sub(" ", "", loadings_pyd2[which(loadings_pyd2$std == min(loadings_pyd2$std)), ]$subscale)`~ = `r format_num(min(loadings_pyd2$std), digits = 2)` to 
+λ~`r sub(" ", "", str_to_title(loadings_pyd2[which(loadings_pyd2$std == max(loadings_pyd2$std)), ]$subscale))`~ = `r format_num(max(loadings_pyd2$std), digits = 2)` for all measurement models in studies 1 and 2, respectively ([-@tbl-loadings1] and [-@tbl-loadings2]). These magnitudes of factor loadings indicate that the modeled items within each measurement model shared a moderate amount of common variance. With the exception of several large RMSEA values for variables in both studies, all latent variables measurement model local fit statistics suggested good fit ([-@tbl-measure1] and [-@tbl-measure2]). The factor loading for the sixth item of intentional self-regulation (λ~ISR7~ = `r format_num(loadings_pyd2[loadings_pyd2$subscale == "ISR7", "std"], 2)` ~ `r format_num(round(loadings_pyd2[loadings_pyd2$subscale == "ISR7", "std"], 2) ^2 * 100, 2)`%) and the parcel of items related to conduct behavior  (λ~ConductBehavior~ = `r format_num(loadings_pyd2[loadings_pyd2$subscale == "Conduct behavior", "std"], 2)` ~ `r format_num(round(loadings_pyd2[loadings_pyd2$subscale == "Conduct behavior", "std"], 2) ^2 * 100, 2)`%) in Study 2 exhibited a small degree of shared variance, but both of these measurement models were retained as designed by @Mueller.2014 for replication purposes.
+
+The two sets of models that analyzed how participation in human-animal interaction relates to positive youth development demonstrated adequate model fit. Specifically, the model that regressed the Six Cs, depression, and intentional self-regulation on animal ownership fit the data well for Study 1 (`r print_model_fit(haipet_fit1)`) and Study 2 (`r print_model_fit(haipet_fit2)`). Similarly, models regressing on amount of animal care and presence and frequency of animal activities fit well in Study 1 (`r print_model_fit(haiactintcare_fit1)`) and Study 2 (`r print_model_fit(haiactintcare_fit2)`). 
+Lastly, the models that investigated the relationships between attachment, commitment, and perception of animal use for animals for Study 1 (`r print_model_fit(attcommmor_fit1)`) and Study 2 (`r print_model_fit(attcommmor_fit2)`) adequately or closely fit the data well before any model trimming occurred. 
+
+After trimming non-significant paths, the model-data fit remained adequate for both Study 1 (`r print_model_fit(trim_model1_9_fitstats)`) and Study 2 (`r print_model_fit(trim_model2_9_fitstats)`) models (@tbl-trimmed1 and @tbl-trimmed2). 
+
+## Model Findings
+
+### Participation in Human Animal Interaction and Positive Youth Development
+
+The effects of four measures of human-animal interaction (animal ownership, amount of care directed to animals, and presence and frequency of engaging in activities with animals) on positive youth development (the Six Cs, depression, and intentional self-regulatory behavior) are illustrated in @tbl-haieffects.
+
+In Study 1, animal ownership did not predict any measures of positive youth development. In Study 2, animal owners expressed greater competence (`r print_regression(haipet_regression2, "competence")`) and confidence (`r print_regression(haipet_regression2, "confidence")`) than non-owners. 
+
+Participants who devoted more care toward their animals had higher competence in Study 1 (`r print_regression(haicare_regression1, "competence")`) and more intentional self-regulatory behavior in Study 2 (`r print_regression(haicare_regression2, "isr")`) than those who devoted less care.
+
+The presence of engaging in animal-related activities did not relate to any measures of positive youth development in either study. However, those who engaged in more frequent activities had higher caring scores (`r print_regression(haiint_regression1, "caring")`) and depression scores (`r print_regression(haiint_regression1, "depression")`) than those engaging in less frequent activities. The frequency of engaging in activities with animals did not predict any measures of positive youth development in Study 2.
+
+
+```{r}
+#| echo: false
+#| label: tbl-haieffects
+#| tbl-cap: "Standardized Model Coefficients for Human-Animal Interaction Variables"
+#| 
+
+model_coefs_hai_table
+
+```
+
+
+### Animal Attitudes and Positive Youth Development
+
+The latent correlations between measures of cognition and emotions about animals were modeled as standardized residual covariances among the attachment, commitment, and perception of animal use factors. In Study 1, all three factors correlated with each other (@tbl-latent-corr). In Study 2, only commitment/attachment and commitment/perception of animal use correlated (@tbl-latent-corr).
+
+The effects of attitudes about animals on positive youth development (the Six Cs, depression, and intentional self-regulatory behavior) are illustrated in @tbl-cogeffects. Whereas @Mueller.2014 reported results only from trimmed models, we also include results from the full models for comparison to the human-animal interaction results.
+
+The relationships between attitudes about animals and studied outcomes that remained after model trimming in Study 1 can be found in @tbl-cogeffects. The standardized regression coefficients demonstrated that the retained outcomes (competence, confidence, connection) shared a positive association with attachment. Commitment was negatively related to depression. Similar to @Mueller.2014, findings related to perception of animal use varied; caring, character, and depression outcomes exhibited a positive relation with perception of animal use, whereas competence, confidence, and connection showed a negative relation with perception of animal use.
+
+For Study 2, standardized regression coefficients suggest that competence and depression had a positive association with attachment. There were no positive youth development outcomes associated with commitment. Lastly, analogous to both @Mueller.2014 and our Study 1 findings, associations between outcomes and perception of animal use were diverse in sign and magnitude. Positive associations existed between perception of animal use and caring, character, and depression outcomes, whereas negative associations were found between perception of animal use and competence, confidence, and connection.
+
+
+```{r}
+#| echo: false
+#| label: tbl-cogeffects
+#| tbl-cap: "Standardized Model Coefficients for Animal Attitude Variables"
+
+model_coefs_cog_table
+
+```
+
+
+### Group Membership
+
+Mueller's (2014) original study specifically included former 4-H members as participants. For our two studies, we recruited participants from the Animal Science major, as well as from a Psychology subject pool. Our assumption was that the Animal Science majors would be more likely to have 4-H or FFA experience, whereas the Psychology sample would have fewer members from those organizations. Our previous analyses combined these two populations and ignored membership in any animal-focused organizations. However, we wanted to test whether membership in 4-H and/or FFA would moderate any of the relationships between positive youth development and human animal interaction or animal attachment, commitment, and perception of animal use.
+
+Across our samples, `r format_num(100 - ffa4h1[ffa4h1$ffa4h_membership == "Neither",]$percent)`% of Study 1 participants were members of 4-H and/or FFA and `r format_num(100 - ffa4h2[ffa4h2$ffa4h_membership == "Neither",]$percent)`% of Study 2 participants were members. As expected, there were more 4-H/FFA members among Animal Science majors (Study 1: `r format_num(100 - ffa4h_casnr1[ffa4h_casnr1$ffa4h_membership == "Neither",]$percent)`%, Study 2: `r format_num(100 - ffa4h_casnr2[ffa4h_casnr2$ffa4h_membership == "Neither",]$percent)`%) than Psychology study pool participants (Study 1: `r format_num(100 - ffa4h_sona1[ffa4h_sona1$ffa4h_membership == "Neither",]$percent)`%, Study 2: `r format_num(100 - ffa4h_sona2[ffa4h_sona2$ffa4h_membership == "Neither",]$percent)`%) in both studies.
+
+As an exploratory analysis, we compared positive youth development and human-animal interaction measures across members and non-members of 4-H/FFA using independent-samples t-tests with Bayes factors. For these tests, we employed the `ttestBF()` function from the _BayesFactor_ R package [@R-BayesFactor] using default priors ("A noninformative Jeffreys prior is placed on the variance of the normal population, while a Cauchy prior is placed on the standardized effect size" with an _r_ scale value of $\sqrt{2}$/2). Bayes factors greater than 3 represent at least moderate evidence of a difference between groups. Bayes factors less than 1/3 represent at least moderate evidence for no difference between groups. Bayes factors between 1/3 and 3 do not have adequate evidence to support either a difference or no difference. 
+
+Only commitment and perception of animal use differed between groups in both studies, where higher values on both measures were observed in non-members when compared to members of 4-H/FFA (@fig-groupdiffs). Non-members also had higher values of attachment and depression in Study 1, whereas members had higher values of confidence. Members had more human-animal interaction activities and higher competence and connection in Study 2.
+
+```{r}
+#| echo: false
+#| label: fig-groupdiffs
+#| fig-cap: "Group Differences in Human Animal Interaction and Positive Youth Development"
+#| apa-note: "Grey dots represent individual subject data points, black horizontal bars represent group means, and black vertical bars represent 95% confidence intervals."
+
+knitr::include_graphics("figures/group_diff_measures.png")
+
+```
+
+To test for effects of group membership on the relationship between human-animal interaction and positive youth development, we re-ran each of the previously described models but included membership as a moderator using a multigroup confirmatory factor analysis [@Little.etal.2007; @Kline.2023]. Equality constraints were placed on pairs of modeled regression coefficients to examine if the strength and sign of regression coefficients differed between these two subgroups. For every association where modification indices recommended the release of equality constraints, the unconstrained multigroup model resulted in associations that, themselves, were non-significant.  Thus, there was no evidence of moderation effects of membership into 4-H/FFA for these associations.
+
+
+# Discussion
+
+Our primary aims for these studies were to replicate and extend Mueller's [-@Mueller.2014] findings about the relationship between positive youth development and both human-animal interaction and attitudes about animals. Mueller found that the positive youth development component of contribution was positively associated with animal ownership, amount of caring for animals, and the presence and frequency of animal-related activities. Across our two studies, we did not find an association with any human-animal interaction variables and contribution. Instead, we found positive associations between animal ownership and competence and confidence, amount of caring for an animal and competence and self-regulation, and frequency of animal activities and caring and depression. However, none of these associations were found in both replicates of our studies---each only occurred in one replicate. Thus, we failed to replicate Mueller's associations between positive youth development and human-animal interaction, with minimal replication of significant associations across our two studies.
+
+@Mueller.2014 found a number of different associations between positive youth development and measures of animal attitudes (animal attachment, commitment, and perception of animal use). Our Study 1 replicated 6 of the 12 associations found by Mueller. In addition, we found another four associations not found by Mueller. In Study 2, we only replicated 4 of Mueller's 12 associations and found an additional four associations not found by Mueller. In all cases of replication, the sign of the association was the same in both studies. Thus, we partially replicated Mueller's associations between positive youth development and animal attitudes. In terms of our internal replication, 18 out of 21 of the association outcomes replicated between our two studies.
+
+Finally, we extended Mueller's [-@Mueller.2014] study by comparing members of 4-H/FFA to non-members to investigate whether this membership moderated any of the effects that we observed. Despite some differences in human-animal interaction and positive youth development characteristics between members and non-members, the addition of membership as a moderator did not affect the models. Thus, membership in 4-H/FFA did not influence the associations between positive youth development and human-animal interaction or animal attitudes.
+
+## Implications
+
+### Associations between Positive Youth Development and Human-Animal Interaction and Attitudes
+Our study examined the associations between positive youth development and human-animal interaction across two studies, replicating and extending Mueller’s [-@Mueller.2014] methods. None of our studies nor Mueller's original work demonstrated strong or consistent effects of human-animal interaction on positive youth development (@tbl-haieffects). These findings suggest that while human-animal interaction is often viewed as beneficial for youth development, the evidence for direct associations between interacting with animals and positive youth development outcomes is weak or highly context dependent. This raises important questions about the presumed benefits of human-animal interaction on youth development. One plausible explanation is that the context and quality of animal interactions, rather than their mere presence, influence their developmental impact. While the literature on human-animal interaction often highlights the emotional, social, and psychological benefits of interacting with animals [@Beetz.etal.2011; @Melson.2003], our findings suggest that these effects are not universal.
+
+The inconsistency in effects across studies may reflect the complexity of human-animal relationships. For instance, different types of interactions (e.g., caregiving, companionship, competitive activities) likely contribute differently to positive youth development. Companion animals, for example, may foster empathy and responsibility in youth [@Daly.Morton.2006], while competitive or labor-based interactions might not provide the same nurturing environment. This nuance aligns with Overton’s [-@Overton.2010] relational developmental systems theory, which emphasizes the person-context interaction in development. According to this theory, positive youth development outcomes are shaped by the reciprocal interaction between individuals and their environments. In the case of human-animal interaction, the context in which youth engage with animals, whether in structured programs like 4-H and FFA or informal pet ownership, might dictate the developmental benefits they receive. Thus, the lack of strong, consistent effects of human-animal interaction on positive youth development across our studies likely stems from the variability in how and why young people interact with animals, pointing to a need for more fine-grained research that accounts for these contextual differences.
+
+Furthermore, the limited associations found between human-animal interaction and positive youth development may also be explained by the potential short-term versus long-term effects of animal interaction. Many studies focusing on human-animal interaction, particularly in therapeutic settings, report immediate emotional benefits such as reduced anxiety and increased social behavior [@Beetz.etal.2011; @OHaire.2010]. However, positive youth development is a long-term developmental process, and it is possible that human-animal interaction only contributes to short-term well-being rather than the broader, sustained developmental outcomes measured by positive youth development frameworks.
+
+[Stronger Associations Between Attitudes and Positive Youth Development.]{.H4} In contrast to the weak and inconsistent effects of human-animal interaction on positive youth development, our studies found stronger and more consistent associations between attitudes toward animals, such as attachment, commitment, and perception of animal use, and positive youth development outcomes (@tbl-cogeffects). These results suggest that the way young people think and feel about animals, rather than simply their level of interaction, plays a more pivotal role in shaping their developmental outcomes. One possible explanation is that attitudes reflect deeper, internalized values that guide behavior, while mere interactions may not have the same lasting impact unless they are tied to emotional significance. Youths who exhibit high attachment or commitment to animals may develop traits like empathy, responsibility, and care, which naturally extend to broader positive youth development outcomes. In this way, the emotional bonds youth form with animals may cultivate traits that align with positive youth development’s core elements (e.g., caring, connection), making attitudes a more powerful predictor of development than the frequency or intensity of interaction alone.
+
+The stronger associations between animal attitudes and positive youth development align with existing research on the role of emotions and attitudes in youth development. For example, @Zasloff.1996 found that attachment to companion animals contributes to children’s emotional security and self-esteem. Similarly, the emotional bonds youth form with animals can foster empathy, responsibility, and prosocial behaviors [@Daly.Morton.2006; @Melson.2003]. These qualities are central to positive youth development, particularly within the Five Cs model, which highlights personal and social competencies as key outcomes [@Lerner.etal.2005]. In this context, youths’ emotional attachments to animals may serve as a pathway through which they develop empathy and caring, essential components of positive youth development. Thus, the consistency in the relationship between attitudes and positive youth development suggests that it is not just the presence of animals in youths’ lives that matters, but how they cognitively and emotionally engage with those animals.
+
+[Perception of Animal Use and Positive Youth Development.]{.H4} Perception of animal use emerged as one of the most consistent predictors of positive youth development outcomes, particularly caring and depression (@tbl-cogeffects). This finding suggests that young people's ethical beliefs about animal use (food production, scientific research, etc.) are closely tied to their personal development. Young people with lower acceptance of a variety of animal uses likely demonstrate greater empathy and concern for others, a core component of positive youth development’s caring dimension [@Mueller.2014]. The literature supports this link, showing that individuals who advocate for animal welfare often extend their empathy to human social causes as well, engaging in prosocial activities and promoting justice [@Herzog.etal.2015].
+
+<!-- The relationship between perception of animal use and depression, however, requires deeper consideration. One possible explanation is that youth with strong convictions may experience emotional distress when confronted with practices or systems they perceive as unethical, particularly in environments where animals are treated as commodities [@Staats.etal.1996]. This internal conflict could manifest as depression, reflecting the emotional burden of maintaining moral integrity in the face of societal norms that may conflict with personal beliefs. This dynamic may explain why youth with less acceptance of animal use, while more likely to show caring and empathy, might also report higher levels of psychological distress. -->
+
+<!--In contrast, the negative associations between perception of animal use and competence or confidence suggest that a heightened concern for animal use might sometimes come with a psychological cost. Youth who are morally invested in animal welfare might feel conflicted or distressed in environments where animals are used for labor, consumption, or other practices they oppose, which could undermine their sense of competence or confidence. This complexity underscores the idea that perception of animal use is not only about prosocial behavior but also about how young people navigate ethical dilemmas, which can influence their broader developmental experiences.-->
+
+Overall, our findings suggest that while human-animal interaction may offer some developmental benefits, it is youths’ emotional and cognitive engagement with animals, particularly their attachment and perception of animal use, that plays a more critical role in shaping positive youth development outcomes. These insights emphasize the need for future research to focus on the quality of human-animal relationships and the values youth develop through their interactions with animals. Programs aiming to leverage human-animal interaction for youth development, such as 4-H and FFA, should consider how a youth’s emotional investment in their relationship with animals may enhance positive youth development more effectively than increasing the frequency or intensity of animal interactions.
+
+### Group Membership Effects
+<!-- * Why do we see higher attacment, commitment, and moral orientation in non-members? -->
+<!-- * Why do we see higher competence and connection in members in Study 2? -->
+<!-- * Why does membership not moderate any observed effects? -->
+<!-- * What does it mean that 4-H members show the same effects as non-members in terms of HAI/attitudes and PYD? -->
+[Membership and Positive Youth Development.]{.H4} One of the striking findings of this study is the lack of a difference between youth involved with 4-H and FFA (members) and those not involved (non-members) in terms of positive youth development. None of the Six Cs differed between members and non-members across both data sets. However, members had higher competence and connection scores in Study 2.
+
+In the positive youth development framework, competence is defined as "positive view of one’s actions in domain specific areas including social, academic, cognitive, and vocational. Social competence pertains to interpersonal skills" [@Lerner.etal.2005]. Therefore, it is reasonable to believe that participating in 4-H and FFA can shape competence. <!--The fore-founder of FFA, agricultural societies have existed in the U.S. since the late 1700s with the primary purpose of providing formal and informal agricultural education through schools and sponsorship of county fair competitions [@Hillison.Bryant.2001].  Meanwhile, in the early 1900s, a young teacher, Jessie Field Shambaugh who is considered the “Mother of 4-H” believed that children’s education should be relevant to the needs of rural living [@Friedel.1981].  Today, animal projects are among the most visible components of youth involvement with 4-H [@Davy.etal.2020] and FFA educational programs.  Livestock and equine projects require time and dedication for daily care, grooming, and training of animals---it is not an interest, but a responsibility  [@Davis.etal.2000].-->  A survey of parents of 4-H youth indicated that their children worked directly with project animals an average of 9-12 hours per week, from January to August [@Heavner.etal.2011].   Because youth involved with 4-H animal projects are commonly engaged in other animal related competitions, are required to complete and submit annual record books, and commonly participate in educational programming, the project functions to educate youth about animal care and management while simultaneously enhancing basic life skills [@Anderson.Karr-Lillienthal.2011; @Holmgren.Reid.2007; @Martin.Rusk.2021; @Rusk.etal.2003].  The animal becomes the tool by which 4-H and FFA foster competence.
+
+Study 2 also indicated greater connection for 4-H and FFA members than non-members.  Connection is defined as "positive bonds with people and institutions that are reflected in bidirectional exchanges between the individual and peers, family, school, and community in which both parties contribute to the relationship" [@Lerner.etal.2005].  The most prevalent theme to emerge from in-depth interviews of 4-H livestock exhibitors in Texas was the development of social relationships [@Davis.etal.2000].  Those involved with showing animals met others with similar interests, received mentorship, and established relationships that provided collegiate and career opportunities.  <!--More than 97% of West Virginia parents indicated that exhibition of livestock was at least moderately influential in helping enhance their children’s ability to relate to others [@Heavner.etal.2011].--> While the show may be competitive, friendships and a sense of belonging develop [@Davis.etal.2000]. Therefore, 4-H and FFA provide clear opportunities for youth to build connections to others.
+
+[Membership and Animal Attitudes.]{.H4} Though membership in 4-H and FFA have inconsistent relationships with positive youth development, it shows more consistent relationships with animal attitudes. Across both studies, non-members had higher commitment and perception of animal use scores and in Study 1 non-members also had higher attachment scores.
+
+At the surface, this study indicates that youth not affiliated with 4-H and FFA have higher attachment and commitment to animals than those involved with 4-H and FFA.  However,  non-members likely established their context through their interaction with family pets, members likely focused on livestock. In fact, in our Study 1, participants selected whether they considered the animal they focused on to be a pet/companion animal or livestock. We found that `r format_num(companion_livestock1[companion_livestock1$member == 0, ]$prop[1] * 100)`% of non-members choose pets, whereas only `r format_num(companion_livestock1[companion_livestock1$member == 1, ]$prop[1] * 100)`% of members chose pets. Thus, the two groups likely had in mind different types of animals when completing our survey.
+
+<!--According to the 2021-2022 American Pet Products Association (APPA) national pet owners survey [@AmericanPetProductsAssociation.2021], 70% of American households have a family pet with whom they have a unique relationship.  In fact, APPA reported that 43% of dog owners and 49% of cat owners allowed their pet to sleep in the owner’s bed.  Furthermore, 32% of pet owners provide clothes, and 79% purchase gifts for their pets.  Increasingly, pets are taken on vacations, and many people will place the health and well-being of their pets above that of their own.  Individuals who interact with their pets that way would naturally showcase higher emotional attachment and commitment to those animals with whom they associate, for pets are often considered to be a “member of the family”.  In contrast, youth who focused on livestock might have different experiences with their animals.  For example, the statement “My animal makes me feel loved” will garner far stronger agreement from those within a companion animal context than those using a livestock or equine context.  Many 4-H and FFA youth have worked with animals throughout life, and they understand and appreciate the purpose of raising livestock species for production of wholesome, safe, and nutritious protein for the well-being of humankind. These youth have likely observed the joys and wonders of working with animals from witnessing the birth of a baby foal or calf, to winning a purple ribbon at the county fair.  Many have also observed the harsh consequences of bad weather and other factors upon animals and their families.  Through exposure to a wider variety of animal uses such as direct involvement in production of animal products, these youth may be predisposed to have a higher perception of animal usage score than youth who do not have those experiences.  Those who completed this survey using the context of a family pet who is a “member of the family” may be more likely to pay thousands of dollars to potentially extend the life of their beloved pet by a few months.  In contrast, those with a more rural background and livestock context are more likely to be considering a livestock animal where this choice may not be viable.  Both groups equally care for the animal despite scales identifying greater commitment towards those willing to pay for the extension of life, not necessarily quality of life.-->
+
+Our results also indicated that non-members had greater acceptance of animal uses than those involved with 4-H and FFA.  As stated by @Mueller.2014, higher scores on the Attitudes Towards Animals Scale “reflect orientation toward moral issues related to animals (e.g., the degree to which animals are deserving of humane treatment, rights, and respect).”  Yet, the scale does not directly ask or evaluate a youth's morals but instead their willingness to accept uses of animals. Urban youth with less exposure to some animals uses may be more likely to be less accepting of these practices.  In contrast, rural youth who interact daily with food animals (beef cattle, dairy cattle, pigs, and sheep) would likely agree with the need for humane treatment and respect of animals, but be more willing to accept a wider variety of animal uses. <!--Many would disagree with the animal rights aspect.  Those individuals and the animal sector of agriculture would argue that humans should advocate for animal welfare rather than rights.-->
+
+We found several differences in human-animal interaction and positive youth development characteristics between members and non-members. However, addition of membership as a moderator did not affect the models, indicating that 4-H/FFA membership did not influence associations between positive youth development and human-animal interaction or animal attitudes.  While key differences exist between members and non-members regarding background and context in development of key responses, ultimately any repeated interaction with animals appears to provide positive youth development, regardless of animal type and/or facilitation of those activities.
+
+### Failure to Replicate
+We partially replicated Mueller’s [-@Mueller.2014] results, but we did not replicate several findings. We did not find an association between human-animal interaction variables and contribution. Additionally, the significant associations between other positive youth development variables and human-animal interaction variables were not consistent across our two studies. Overall, we observed smaller effect sizes for the association between positive youth development and human-animal interaction than those by Mueller. Our lack of replication was not simply based on the outcome of statistical tests, as this approach is not optimal [@Gelman.Stern.2006]. Our sample was slightly smaller than Mueller’s  but had similar demographic characteristics. <!--Mueller’s study population included one wave of a longitudinal sample, and it is possible that differences in sample composition could emerge based on relationships between variables of interest and attrition. While we did not find that membership in 4-H/FFA influenced the associations in our study, it is not clear if that would be the case in a longitudinal sample.-->
+
+We partially replicated Mueller’s [-@Mueller.2014] associations between positive youth development and measures of animal attitudes. We replicated 6 out of the 12 significant associations reported by Mueller in at least one of our studies. The associations between positive youth development variables and measures of animal attitudes were also more consistent across our two studies relative to the associations between positive youth development and human-animal interaction. The larger effect sizes and greater consistency over our two studies suggest that associations between positive youth development and animal attitudes may be more strongly related than relationships between positive youth development and human-animal interaction. We do not conclude that there is no relationship between human-animal interaction and positive youth development based on our results, but that the nature of this relationship may be more complex and require larger sample sizes to account for other sources of variance.
+
+
+## Limitations and Future Directions
+
+Our studies had several limitations. Study 1 was not a direct replication of Mueller (2014), as we did not include the self-regulation measure, used slightly different methods to quantify animal activities, and a slightly different scale to measure positive youth development. However, in Study 2 we replicated @Mueller.2014 as closely as possible, adding the self-regulation measure, quantifying animal activities in a similar way, and used an updated positive youth development scale that focused on older adolescence. 
+
+Another possible limitation of our studies was the sample size. The combined samples from Study 1 and Study 2 were similar to the sample used by Mueller. However, future studies may want to more clearly define replication goals [@Anderson.Kelley.inpress], which can help guide decisions around sample size. 
+
+Another limitation may be the measurement of human-animal interaction. These concepts are complex and may require additional study to describe the quality and quantity of these interactions more accurately. It is also possible that multiple other factors can also influence measures of human-animal interaction in different ways. Future studies could refine and validate measures of human-animal interaction, since there has been a rapid proliferation of the number of possible scales [@Samet.etal.2023]. 
+
+Finally, interpreting nonsignificant results in replication studies (even in seemingly well-powered studies) is difficult for myriad reasons and may necessitate multiple replication studies to provide firm evidence for a hypothesis [@Maxwell.etal.2015]. These points all support further research focused on the effects of human-animal interaction and animal attitudes on positive youth development to help maximize youth development opportunities.
+
+## Conclusion
+
+We replicated and extended the methods of @Mueller.2014 to investigate the relationship among human-animal interaction, animal attitudes, and positive youth development. We did not find strong relationships among human-animal interaction and positive youth development, which failed to replicate Mueller's findings. However, we did find clear relationships between animal attitudes and positive youth development, and many of these effects replicated Mueller's findings. We extended Mueller's work by considering membership in 4-H and/or FFA as a moderator in the analysis. Though we found a few differences between members and non-members in animal attitudes and positive youth development, these differences did not moderate any relationships that we tested. Thus, we partially replicated Mueller's original study, demonstrating that the relationship between positive youth development and human-animal interactions and animal attitudes is complex. The relationship between perception of animal use and positive youth development seems to be fairly robust. However, other animal attitudes and aspects of human-animal interaction do not seem to have reliable relationships with positive youth development. Future work in this area should ensure large sample sizes, use strong measures of human-animal interaction and animal attitudes, and consider the demographic and animal-relevant differences among participants to better understand how animal relationships and attitudes are related to positive youth development.
+
+# References
+
+<!-- References will auto-populate in the refs div below -->
+
+<!-- ::: {#refs} -->
+<!-- ::: -->
+
+<!-- Delete Appendix if not needed. -->
+
+# Appendix
+
+
+```{r}
+#| echo: false
+#| label: tbl-demo
+#| tbl-cap: "Demographics Information"
+
+demo_table
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-loadings1
+#| tbl-cap: "Factor Loadings for Positive Youth Development in Study 1"
+
+loadings1_table
+
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-loadings2
+#| tbl-cap: "Factor Loadings for Positive Youth Development in Study 2"
+
+loadings2_table
+
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-measure1
+#| tbl-cap: "Measure Model Fit in Study 1"
+
+meas_model_fit1_table
+
+```
+
+```{r}
+#| echo: false
+#| label: tbl-measure2
+#| tbl-cap: "Measure Model Fit in Study 2"
+
+meas_model_fit2_table
+
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-latent-corr
+#| tbl-cap: "Latent Correlations"
+
+latent_cor_table
+
+```
+
+
+```{r}
+#| echo: false
+#| label: tbl-trimmed1
+#| tbl-cap: "Trimmed Model Fit in Study 1"
+
+trim_model_fits1_table
+
+```
+
+```{r}
+#| echo: false
+#| label: tbl-trimmed2
+#| tbl-cap: "Trimmed Model Fit in Study 2"
+
+trim_model_fits2_table
+
+```
+
+
+
