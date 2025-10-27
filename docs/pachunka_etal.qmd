@@ -111,11 +111,7 @@ author:
 author-note:
   status-changes: 
     # Example: [Author name] is now at [affiliation].
-    affiliation-change: "**This preprint has been accepted for publication at _People and Animals_.** 
-
-Version: `r Sys.Date()`.
-
-_PsyArXiv_: <https://doi.org/10.31234/osf.io/ge7bf>"
+    affiliation-change: ~
     # Example: [Author name] is deceased.
     deceased: ~
   # Disclosures condensed to one paragraph, but you can start a field with two line breaks to break them up: \n\nNew Paragraph
@@ -138,10 +134,10 @@ keywords: [animal attitudes, attachment, commitment, human-animal interaction, p
 # If true, tables and figures are mingled with the text instead of listed at the end of the document.
 floatsintext: false
 # Numbered lines (.pdf and .docx only)
-numbered-lines: false
+numbered-lines: true
 # File with references
 bibliography: ["bibliography.bib", "r-references.bib"]
-csl: pachunka_etal_2024.csl
+csl: apa7_chron.csl
 # Suppress title page
 suppress-title-page: false
 # Masks references that appear in the masked-citations list
@@ -178,10 +174,10 @@ library(papaja)
 library(rmarkdown)
 library(tidyverse)
 
-load("pachunka_etal_2024.RData")
-# source("R/pachunka_etal_2024_rcode.R")
+load(here("R/pachunka_etal_2024.RData"))
+# source(here("R/pachunka_etal_2024_rcode.R"))
 
-my_citations <- cite_r(file = "r-references.bib", pkgs = c("BayesFactor", "cocoon", "flextable", "ggbeeswarm", "here", "gtsummary", "Hmisc", "labelled", "lavaan", "papaja", "patchwork", "psych", "semTable", "tidyverse"), withhold = FALSE)
+my_citations <- cite_r(file = here("docs/r-references.bib"), pkgs = c("BayesFactor", "cocoon", "flextable", "ggbeeswarm", "here", "gtsummary", "Hmisc", "labelled", "lavaan", "papaja", "patchwork", "psych", "semTable", "tidyverse"), withhold = FALSE)
 
 print_model_fit <- function(x) {
   paste0("_CFI_ = ", 
@@ -362,7 +358,7 @@ Only commitment and perception of animal use differed between groups in both stu
 #| apa-note: "Grey dots represent individual subject data points, black horizontal bars represent group means, and black vertical bars represent 95% confidence intervals. Figure used with permission under a CC-BY 4.0 license: Pachunka et al. (2024); available at https://doi.org/10.31234/osf.io/ge7bf."
 #| fig-alt: "Two sub-figures: The top sub-figure is for Study 1 and the bottom sub-figure is for Study 2. Both sub-figures show beeswarm plots and means and 95% confidence intervals for 11 different scores (HAI activities, attachment, commitment, perception of animal use, caring, character, competence, confidence, connection, depression, and anxiety/self-regulation) as a function of 4-H/FFA membership (Yes/No)."
 
-knitr::include_graphics("figures/group_diff_measures.png")
+knitr::include_graphics(here("figures/group_diff_measures.png"))
 
 ```
 

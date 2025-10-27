@@ -2,7 +2,7 @@
 
 -   Created on 2024-11-07 by Jeffrey R. Stevens
     (<jeffrey.r.stevens@gmail.com>)
--   Finalized on 2024-11-12
+-   Finalized on 2022-10-27
 
 This repository provides the reproducible research materials for our
 project that investigates how human-animal interaction, animal
@@ -20,7 +20,7 @@ If you use any of these materials, please cite:
 > Pachunka, A., Jeffries, J., Karr, L., Luck, L., Reiling, B.A.,
 > Schultz, D.H., & Stevens, J.R. (2024). Effects of human-animal
 > interaction on positive youth development: A replication study.
-> *PsyArXiv*.
+> *People and Animals*.
 > [doi:10.31234/osf.io/ge7bf](https://doi.org/10.31234/osf.io/ge7bf)
 
 ## Summary
@@ -341,7 +341,7 @@ well-being.</code>
 url
 </td>
 <td>
-<code itemprop="url">https://github.com/unl-cchil/haipyd</code>
+<code itemprop="url"><https://github.com/unl-cchil/haipyd></code>
 </td>
 </tr>
 <tr>
@@ -349,7 +349,7 @@ url
 sameAs
 </td>
 <td>
-<code itemprop="sameAs">https://github.com/unl-cchil/haipyd</code>
+<code itemprop="sameAs"><https://github.com/unl-cchil/haipyd></code>
 </td>
 </tr>
 <tr>
@@ -357,7 +357,7 @@ sameAs
 citation
 </td>
 <td>
-<code itemprop="citation">https://doi.org/10.31234/osf.io/ge7bf</code>
+<code itemprop="citation"><https://doi.org/10.31234/osf.io/ge7bf></code>
 </td>
 </tr>
 <tr>
@@ -388,7 +388,7 @@ name
 url
 </td>
 <td>
-<code itemprop="url">https://creativecommons.org/licenses/by-sa/4.0/</code>
+<code itemprop="url"><https://creativecommons.org/licenses/by-sa/4.0/></code>
 </td>
 </tr>
 </table>
